@@ -1,0 +1,765 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Latian 1</title>
+
+</head>
+
+<body>
+
+<h1>Halo Aku Belajar HTML</h1>
+
+<p>Ini paragraf pertamaku</p>
+
+</body>
+
+</html>
+  
+  <h2><tabelNilai></h2>
+    <table border="1">
+      <tr>
+        <th>mapel</th>
+        <th>nilai</th>
+      </tr>
+      <tr>
+        <td>MTK</td>
+        <td>100</td>
+      </tr>
+    </table>
+    
+    <br><br>
+
+    <h2>Form Daftar</h2>
+    <form>
+      Nama:<input
+        type="text"><br><br>
+      Email:<input
+        type="email"><br><br>
+      password:<input
+        type="password"><br><br>
+      <button>daftar</button>
+    </form>
+    
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Background Warna</title>
+    </head>
+    <body style="Background-color:purple">
+      <h1>Halo! Background ungu</h1>
+      <p>warna bisa diganti</p>
+    </body>
+    </html>
+    
+    <!DOCTYPE html>
+<html>
+<head>
+<style>
+  
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NILAIKU - Dashboard Sekolah</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #0b1020;
+  --card: #151c31;
+  --purple: #8b5cf6;
+  --blue: #38bdf8;
+  --text: #f1f5f9;
+  --muted: #9ca9c4;
+  --green: #34d399;
+  --red: #fb7185;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background:
+    radial-gradient(ellipse at top left, #30205e 0%, transparent 45%),
+    linear-gradient(135deg, #0b1020, #11182b);
+  color: var(--text);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1050px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+  animation: turun .7s ease;
+}
+
+.logo {
+  font-size: 27px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: var(--blue);
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.badge {
+  background: #202b47;
+  color: #93c5fd;
+  padding: 10px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  border: 1px solid #37466b;
+}
+
+.hero {
+  background: linear-gradient(120deg, #6d28d9, #2563eb);
+  border-radius: 24px;
+  padding: 27px;
+  margin-bottom: 22px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 15px 45px #0004;
+  animation: muncul .8s ease;
+}
+
+.hero::after {
+  content: "✦";
+  position: absolute;
+  right: 25px;
+  top: -35px;
+  font-size: 180px;
+  color: #ffffff15;
+  animation: putar 18s linear infinite;
+}
+
+.hero h1 {
+  font-size: clamp(25px, 5vw, 38px);
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero p {
+  color: #e0e7ff;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+  margin-bottom: 24px;
+}
+
+.card {
+  background: linear-gradient(145deg, #19233c, #12192b);
+  border: 1px solid #ffffff12;
+  border-radius: 18px;
+  padding: 20px;
+  transition: transform .25s, border-color .25s;
+  animation: muncul .7s ease both;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #8b5cf680;
+}
+
+.card .icon {
+  font-size: 25px;
+  margin-bottom: 14px;
+}
+
+.card .label {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.card .number {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.card .desc {
+  color: var(--muted);
+  font-size: 11px;
+  margin-top: 8px;
+}
+
+.section {
+  background: #121a2d;
+  border: 1px solid #ffffff12;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 22px;
+}
+
+.section-title {
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+input, select {
+  background: #0c1325;
+  color: white;
+  border: 1px solid #34415e;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 14px;
+  min-width: 0;
+}
+
+input:focus, select:focus {
+  outline: 2px solid #8b5cf6;
+  border-color: transparent;
+}
+
+#search {
+  flex: 1;
+  min-width: 130px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 13px;
+  color: white;
+  background: linear-gradient(110deg, #8b5cf6, #3b82f6);
+  transition: transform .2s, filter .2s, box-shadow .2s;
+}
+
+button:hover {
+  filter: brightness(1.2);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 18px #6366f155;
+}
+
+button:active {
+  transform: scale(.96);
+}
+
+.btn-green {
+  background: linear-gradient(110deg, #059669, #34d399);
+  color: #052e25;
+}
+
+.btn-red {
+  background: #3a1c31;
+  color: #fda4af;
+  border: 1px solid #7f304b;
+}
+
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 490px;
+}
+
+th {
+  background: #202a44;
+  color: #b9c8e8;
+  font-size: 12px;
+  text-align: left;
+  padding: 14px 12px;
+}
+
+td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #ffffff0c;
+  font-size: 13px;
+}
+
+tbody tr {
+  transition: background .2s;
+  animation: muncul .4s ease;
+}
+
+tbody tr:hover {
+  background: #ffffff08;
+}
+
+.score {
+  font-weight: bold;
+  color: #c4b5fd;
+}
+
+.status {
+  display: inline-block;
+  padding: 6px 9px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.lulus {
+  background: #064e3b;
+  color: #6ee7b7;
+}
+
+.remedial {
+  background: #4c1d2c;
+  color: #fda4af;
+}
+
+.hint {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+  margin-top: 12px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.form-grid input {
+  width: 100%;
+}
+
+.progress-item {
+  margin: 18px 0;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 13px;
+  margin-bottom: 9px;
+}
+
+.track {
+  height: 9px;
+  background: #27334c;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  width: 0;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #8b5cf6, #38bdf8);
+  transition: width 1s ease;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 25px;
+  transform: translate(-50%, 100px);
+  opacity: 0;
+  background: #263653;
+  color: white;
+  padding: 13px 20px;
+  border-radius: 12px;
+  z-index: 10;
+  transition: .3s;
+  width: max-content;
+  max-width: 90%;
+  font-size: 13px;
+  box-shadow: 0 8px 25px #0005;
+}
+
+.toast.show {
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
+@keyframes muncul {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes turun {
+  from { opacity: 0; transform: translateY(-15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes putar {
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 600px) {
+  body { padding: 13px; }
+  .grid { grid-template-columns: 1fr; }
+  .hero { padding: 23px; }
+  .section { padding: 15px; }
+  .form-grid { grid-template-columns: 1fr; }
+  .logo { font-size: 24px; }
+  .card { padding: 16px; }
+  .card .number { font-size: 26px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<header>
+  <div>
+    <div class="logo">NILAI<span>KU.</span></div>
+    <div class="subtitle">STUDENT ACADEMIC DASHBOARD</div>
+  </div>
+  <div class="badge">✦ Dashboard Siswa</div>
+</header>
+
+<section class="hero">
+  <h1>Belajar Lebih Baik! 🚀</h1>
+  <p>Pantau nilai, evaluasi hasil belajar, dan raih prestasi terbaikmu.</p>
+</section>
+
+<section class="grid">
+  <div class="card">
+    <div class="icon">📚</div>
+    <div class="label">Jumlah Mata Pelajaran</div>
+    <div class="number" id="totalMapel">0</div>
+    <div class="desc">Mata pelajaran terdaftar</div>
+  </div>
+
+  <div class="card">
+    <div class="icon">🏆</div>
+    <div class="label">Nilai Rata-rata</div>
+    <div class="number" id="rataRata">0</div>
+    <div class="desc">Dari semua nilai yang tersedia</div>
+  </div>
+
+  <div class="card">
+    <div class="icon">✅</div>
+    <div class="label">Mata Pelajaran Tuntas</div>
+    <div class="number" id="totalLulus">0</div>
+    <div class="desc">Nilai minimal 75</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">📊 Grafik Pencapaian</h2>
+  <div id="grafik"></div>
+  <p class="hint">Grafik menunjukkan nilai setiap mata pelajaran. Nilai minimal ketuntasan adalah 75.</p>
+</section>
+
+<section class="section">
+  <h2 class="section-title">📝 Daftar Nilai</h2>
+
+  <div class="toolbar">
+    <input id="search" type="search" placeholder="Cari mata pelajaran...">
+    <button onclick="tampilSemua()">Semua</button>
+    <button class="btn-green" onclick="tambahContoh()">+ Tambah Contoh</button>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Mata Pelajaran</th>
+          <th>Nilai</th>
+          <th>Status</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody id="daftarNilai"></tbody>
+    </table>
+  </div>
+  <p class="hint">Data awal hanya contoh. Kamu bisa menghapus atau menambahkan nilai sendiri.</p>
+</section>
+
+<section class="section">
+  <h2 class="section-title">➕ Tambah Nilai Baru</h2>
+
+  <form id="formNilai">
+    <div class="form-grid">
+      <input id="mapel" type="text" placeholder="Nama mata pelajaran" required maxlength="60">
+      <input id="nilai" type="number" placeholder="Nilai (0–100)" min="0" max="100" step="1" required>
+    </div>
+    <button type="submit">Simpan Nilai ✨</button>
+    <button type="button" class="btn-red" onclick="resetForm()">Reset Form</button>
+  </form>
+</section>
+
+<section class="section">
+  <h2 class="section-title">🎯 Target Belajar</h2>
+  <div class="progress-item">
+    <div class="progress-info">
+      <span>Target nilai rata-rata</span>
+      <strong id="targetText">85</strong>
+    </div>
+    <div class="track">
+      <div class="bar" id="targetBar"></div>
+    </div>
+  </div>
+  <p class="hint" id="motivasi">Terus belajar dan raih targetmu!</p>
+</section>
+
+<footer>
+  © 2026 NILAIKU • Belajar, Berkembang, Berprestasi ✨
+</footer>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const KKM = 75;
+const TARGET = 85;
+
+let dataNilai = [
+  { mapel: "Matematika", nilai: 90 },
+  { mapel: "Bahasa Indonesia", nilai: 85 },
+  { mapel: "Bahasa Inggris", nilai: 88 },
+  { mapel: "Informatika", nilai: 95 },
+  { mapel: "IPA", nilai: 72 }
+];
+
+let filterLulus = false;
+let toastTimer;
+
+const $ = id => document.getElementById(id);
+
+function tampilPesan(pesan) {
+  $("toast").textContent = pesan;
+  $("toast").classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => {
+    $("toast").classList.remove("show");
+  }, 2300);
+}
+
+function hitungStatistik() {
+  const jumlah = dataNilai.length;
+  const total = dataNilai.reduce((sum, item) => sum + item.nilai, 0);
+  const rata = jumlah ? total / jumlah : 0;
+  const lulus = dataNilai.filter(item => item.nilai >= KKM).length;
+
+  $("totalMapel").textContent = jumlah;
+  $("rataRata").textContent = rata.toFixed(1);
+  $("totalLulus").textContent = lulus;
+
+  $("targetText").textContent = TARGET;
+  $("targetBar").style.width =
+    Math.min((rata / TARGET) * 100, 100) + "%";
+
+  if (!jumlah) {
+    $("motivasi").textContent = "Tambahkan nilai untuk mulai memantau kemajuanmu.";
+  } else if (rata >= TARGET) {
+    $("motivasi").textContent = "Hebat! Target rata-ratamu sudah tercapai! 🎉";
+  } else if (rata >= KKM) {
+    $("motivasi").textContent = "Bagus! Sedikit lagi menuju target. Tetap semangat!";
+  } else {
+    $("motivasi").textContent = "Tetap semangat! Tingkatkan hasil belajarmu.";
+  }
+
+  tampilGrafik();
+}
+
+function tampilGrafik() {
+  const grafik = $("grafik");
+
+  if (!dataNilai.length) {
+    grafik.innerHTML = '<p class="hint">Belum ada data nilai.</p>';
+    return;
+  }
+
+  grafik.innerHTML = dataNilai.map(item => `
+    <div class="progress-item">
+      <div class="progress-info">
+        <span>${escapeHTML(item.mapel)}</span>
+        <strong>${item.nilai}</strong>
+      </div>
+      <div class="track">
+        <div class="bar" data-width="${item.nilai}%"></div>
+      </div>
+    </div>
+  `).join("");
+
+  requestAnimationFrame(() => {
+    grafik.querySelectorAll(".bar").forEach(bar => {
+      bar.style.width = bar.dataset.width;
+    });
+  });
+}
+
+function escapeHTML(teks) {
+  return String(teks).replace(/[&<>"']/g, huruf => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
+  })[huruf]);
+}
+
+function tampilTabel() {
+  const cari = $("search").value.trim().toLowerCase();
+  const tbody = $("daftarNilai");
+
+  const hasil = dataNilai
+    .map((item, index) => ({...item, index}))
+    .filter(item => item.mapel.toLowerCase().includes(cari))
+    .filter(item => !filterLulus || item.nilai >= KKM);
+
+  if (!hasil.length) {
+    tbody.innerHTML = `
+      <tr><td colspan="5" style="text-align:center">
+        Tidak ada data yang cocok.
+      </td></tr>`;
+    return;
+  }
+
+  tbody.innerHTML = hasil.map(item => `
+    <tr>
+      <td>${item.index + 1}</td>
+      <td>${escapeHTML(item.mapel)}</td>
+      <td class="score">${item.nilai}</td>
+      <td>
+        <span class="status ${item.nilai >= KKM ? "lulus" : "remedial"}">
+          ${item.nilai >= KKM ? "TUNTAS" : "REMEDIAL"}
+        </span>
+      </td>
+      <td>
+        <button class="btn-red"
+          onclick="hapusNilai(${item.index})">Hapus</button>
+      </td>
+    </tr>
+  `).join("");
+}
+
+function tampilSemua() {
+  filterLulus = !filterLulus;
+  tampilTabel();
+  tampilPesan(filterLulus ? "Menampilkan nilai tuntas." : "Menampilkan semua nilai.");
+}
+
+function hapusNilai(index) {
+  const nama = dataNilai[index].mapel;
+  dataNilai.splice(index, 1);
+  perbarui();
+  tampilPesan(nama + " berhasil dihapus.");
+}
+
+function tambahContoh() {
+  const nama = "Mata Pelajaran " + (dataNilai.length + 1);
+
+  if (dataNilai.some(item => item.mapel.toLowerCase() === nama.toLowerCase())) {
+    tampilPesan("Contoh nilai tersebut sudah ada.");
+    return;
+  }
+
+  dataNilai.push({
+    mapel: nama,
+    nilai: 80
+  });
+
+  perbarui();
+  tampilPesan("Contoh nilai berhasil ditambahkan.");
+}
+
+function resetForm() {
+  $("formNilai").reset();
+  $("mapel").focus();
+}
+
+function perbarui() {
+  hitungStatistik();
+  tampilTabel();
+}
+
+$("formNilai").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const mapel = $("mapel").value.trim();
+  const nilai = $("nilai").value;
+
+  if (!mapel) {
+    tampilPesan("Nama mata pelajaran harus diisi.");
+    return;
+  }
+
+  if (nilai === "" || Number(nilai) < 0 ||
+      Number(nilai) > 100 || !Number.isInteger(Number(nilai))) {
+    tampilPesan("Masukkan nilai bulat dari 0 sampai 100.");
+    return;
+  }
+
+  if (dataNilai.some(item =>
+    item.mapel.toLowerCase() === mapel.toLowerCase())) {
+    tampilPesan("Mata pelajaran tersebut sudah ada.");
+    return;
+  }
+
+  dataNilai.push({
+    mapel: mapel,
+    nilai: Number(nilai)
+  });
+
+  perbarui();
+  resetForm();
+  tampilPesan("Nilai berhasil disimpan! 🎉");
+});
+
+$("search").addEventListener("input", tampilTabel);
+
+perbarui();
+</script>
+</body>
+</html>
